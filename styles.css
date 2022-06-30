@@ -1,0 +1,201 @@
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+@import url('https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;    
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+}
+
+.side-image-banner {
+    background-image: url(img/image-banner-v2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 35vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-title {
+    display: flex;
+    height: 10em;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 20vh;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-title h1{
+    font-family: 'Norse', sans-serif;
+    font-size: 6em;
+    color: white;
+}
+
+.credits {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 12px;
+}
+
+.credits a{
+    color: white;
+}
+
+.sign-up {
+    background-color: #F9FAFB;
+    height: 100vh;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description, .sign-up-form, .buttons {
+    padding-left: 3em;
+    padding-right: 5em;
+}
+
+.description {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 2.5em;
+}
+
+.sign-up-form {
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    padding-top: 1.5em;
+    padding-bottom: 2.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    column-gap: 5em;
+    row-gap: 2em;
+    padding-top: 1em;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 3px;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4188FF;
+    box-shadow: 0 0 10px gray;
+}
+
+input:invalid:focus {
+    border-color: red;
+}
+
+.form-control label {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.error {
+    font-size: 0.8em;
+    color: red;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2em;
+    gap: 1em;
+}
+
+.buttons button {
+    background-color: #FFA710;
+    border-radius: 5px;
+    border-style: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    align-self: flex-start;
+    box-shadow: 0 0 3px gray;
+}
+
+.buttons a{
+    color: #FFA710;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1000px){
+    main {
+        flex-direction: column;
+    }
+    
+    .side-image-banner {
+        height: 25vh;
+        width: 100vw;
+    }
+
+    .logo-title {
+       top: 20%;
+    }
+
+    .sign-up {
+        height: auto;
+        width: 100vw;
+        padding-top: 2.5em;
+        padding-bottom: 2.5em;
+    }
+
+    .description, .sign-up-form, .buttons {
+        padding-left: 1.5em;
+        padding-right: 2.5em;
+    }
+
+    form {
+        column-gap: 2em;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    form {
+        flex-direction: column;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+}

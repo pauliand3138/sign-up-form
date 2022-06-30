@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form - Paul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="side-image-banner">
+            <div class="logo-title">
+                <img class="odin-logo" src="img/odin-logo.png" alt="odin logo" height="120">
+                <h1>Paul</h1>
+            </div>
+            <p class="credits">Photo by <a href="https://unsplash.com/@yoavaziz" target="_blank">Yoav Aziz</a> on <a href="https://unsplash.com/photos/tKCd-IWc4gI" target="_blank">Unsplash</a></p>
+        </div>
+        <div class="sign-up">
+            <div class="description">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</br>Sign up <em>now</em> to get started.</p>
+                <br/>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="sign-up-form">
+                <h2>Let's do this!</h2>
+                <form id="my-form">
+                    <div class="form-control">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" required>
+                        <p id="first-name-error" class="error"></p>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" required>
+                        <p id="last-name-error" class="error"></p>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                        <p id="email-error" class="error"></p>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" required
+                        pattern="[0-9]{10,11}">
+                        <div id="phone-number-error" class="error"></div>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required
+                        pattern="(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$&*]).{8,}">
+                        <p id="password-error" class="error"></p>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="retype-password">Retype Password</label>
+                        <input type="password" id="retype-password" required>
+                        <p id="retype-password-error" class="error"></p>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="buttons">
+                <button type="submit" form="my-form">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
