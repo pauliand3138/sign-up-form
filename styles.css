@@ -1,5 +1,14 @@
 @import url('https://fonts.cdnfonts.com/css/montserrat');
-@import url('https://db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse');
+
+@font-face {
+	font-family:"Norse-Bold";
+	src:url("fonts/Norse-Bold/Norse-Bold.eot?") format("eot"),
+	url("fonts/Norse-Bold/Norse-Bold.woff") format("woff"),
+	url("fonts/Norse-Bold/Norse-Bold.ttf") format("truetype"),
+	url("fonts/Norse-Bold/Norse-Bold.svg#Norse-Bold") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
 
 *{
     margin: 0px;
@@ -42,7 +51,7 @@ main {
 }
 
 .logo-title h1{
-    font-family: 'Norse', sans-serif;
+    font-family: 'Norse-Bold', sans-serif;
     font-size: 6em;
     color: white;
 }
