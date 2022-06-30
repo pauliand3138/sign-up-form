@@ -21,6 +21,7 @@ main {
     background-image: url(img/image-banner-v2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 35vw;
     position: relative;
@@ -131,6 +132,10 @@ input:invalid:focus {
 .error {
     font-size: 0.8em;
     color: red;
+}
+
+.error-border {
+    border-color: red;
 }
 
 .buttons {
